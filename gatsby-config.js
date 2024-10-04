@@ -9,15 +9,15 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Christian's Starter Blog`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Christian Acevedo`,
+      summary: `Vivo en Puerto Rico inventando par de cosas`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    description: `Un blog hecho por un tal gatsby de san Fransico que voy a editar y continuar a mi manera`,
+    siteUrl: `https://ontopofthings.netlify.app/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `no twitter for now`,
     },
   },
   plugins: [
