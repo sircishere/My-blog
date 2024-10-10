@@ -9,7 +9,7 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Christian's Starter Blog`,
+    title: `On top of things`,
     author: {
       name: `Christian Acevedo`,
       summary: `Vivo en Puerto Rico inventando par de cosas`,
