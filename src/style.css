@@ -82,7 +82,7 @@ body {
   font-size: var(--fontSize-1);
   color: var(--color-text);
   background-color: var(--color-main-background);
-  background-image: url(images/relaxed-beach-image.jpg);
+  background-image: url(/images/relaxed-beach-image.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
