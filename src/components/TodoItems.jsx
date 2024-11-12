@@ -12,7 +12,7 @@ const TodoItems = ({text, id, isComplete, deleteTodo,toggle}) => {
         {/* if the todoItem is clicked, call the toggle function to enable the crossed out style */}
         <div onClick={() => {toggle(id)}} className='flex flex-1 items-center cursor-pointer'>
             <img src={isComplete ? tick : not_tick} alt="" className='w-7'/>
-            <p className={`text-slate-700 ml-4 text-[17px] flex-1 ${isComplete ? "line-through" : ""}`}> {text}</p>
+            <p className={`text-slate-700 ml-4 my-3 text-[17px] flex-1  ${isComplete ? "line-through" : ""}`}> {text}</p>
 
             {/* if the delete icon is clicked, call the delete function */}
             <img onClick={()=>{deleteTodo(id)}} src={delete_icon} alt="" className='w-3.5 cursor-pointer'/>

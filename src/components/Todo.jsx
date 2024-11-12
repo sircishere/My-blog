@@ -8,7 +8,9 @@ const Todo = () => {
 
     //this line of code creates the variables to be used to store the todoitems in the local storage.
     //If there are no todo items created the variable todoList is set to an empty array
-    const [todoList,setTodoList] = useState(localStorage.getItem("todos")? JSON.parse(localStorage.getItem("todos")) : []  )
+    // const [todoList,setTodoList] = useState(localStorage.getItem("todos")? JSON.parse(localStorage.getItem("todos")) : []  )
+
+    const [todoList, setTodoList] = useState(typeof window !== 'undefined' ? (localStorage.getItem("todos")? JSON.parse(localStorage.getItem("todos")) : []) : []);
 
     
     ///useRef is a react hook used to reference a value that isnt needed when rendering///
@@ -96,8 +98,8 @@ const Todo = () => {
     <div className='bg-white place-self-center w-11/12 max-w-md flex flex-col p-7 min-h-[550px] rounded-xl'>
         {/* title */}
 
-        <div className='flex items-center mt-7 gap-2'>
-            <img className='w-8' src={todo_icon} alt=""/>
+        <div className='flex items-center gap-2'>
+            <img className='w-8 mt-6' src={todo_icon} alt=""/>
             <h1 className='text-3xl font-semibold'>To-Do List</h1>
         </div>
 
