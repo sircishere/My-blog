@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Todo from "../components/Todo"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -18,6 +19,7 @@ const BlogIndex = ({ data, location }) => {
           directory you specified for the "gatsby-source-filesystem" plugin in
           gatsby-config.js).
         </p>
+        
       </Layout>
     )
   }
@@ -57,6 +59,7 @@ const BlogIndex = ({ data, location }) => {
           )
         })}
       </ol>
+      <Todo />
     </Layout>
   )
 }
