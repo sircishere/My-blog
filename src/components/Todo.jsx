@@ -10,8 +10,17 @@ const Todo = () => {
     //If there are no todo items created the variable todoList is set to an empty array
     // const [todoList,setTodoList] = useState(localStorage.getItem("todos")? JSON.parse(localStorage.getItem("todos")) : []  )
 
-    const [todoList, setTodoList] = useState(typeof window !== 'undefined' ? (localStorage.getItem("todos")? JSON.parse(localStorage.getItem("todos")) : []) : []);
+    const [todoList, setTodoList] = useState([]);
 
+    useEffect(() => {
+      if (typeof window !== 'undefined') {
+        const savedTodos = localStorage.getItem("todos");
+        if (savedTodos) {
+          setTodoList(JSON.parse(savedTodos));
+        }
+      }
+    }, []);
+    
     
     ///useRef is a react hook used to reference a value that isnt needed when rendering///
     //so use it when you want to declare a variable that has no value at first render of the web app/// 
